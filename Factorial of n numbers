@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class factorial{
+  public static long multiplyingNumbers(int num){
+        if (num>=1)
+            return num*multiplyingNumbers(num-1);
+        else
+            return 1;
+  }
+  public static void main (String args[])
+  {
+   Scanner sc = new SCcanner(System.in);
+   int num = sc.nextInt();
+   long factorial= multiplyingNumbers(num);
+   System.out.println("Factorial of" +num "=" + factorial);
+   }
+   }
